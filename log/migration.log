@@ -1,0 +1,137 @@
+2019-06-23 12:29:34,825 INFO [JavaFX Application Thread] WELD-000900: 3.1.1 (Final)
+2019-06-23 12:29:34,893 INFO [JavaFX Application Thread] WELD-ENV-000020: Using jandex for bean discovery
+2019-06-23 12:29:35,701 INFO [JavaFX Application Thread] WELD-000101: Transactional services not available. Injection of @Inject UserTransaction not available. Transactional observers will be invoked synchronously.
+2019-06-23 12:29:36,173 INFO [JavaFX Application Thread] WELD-ENV-002003: Weld SE container ada724f9-d095-4474-b259-edd6faa1ceba initialized
+2019-06-23 12:29:36,196 INFO [JavaFX Application Thread] Starting Migration Application
+2019-06-23 12:30:48,190 INFO [JavaFX Application Thread] WELD-000900: 3.1.1 (Final)
+2019-06-23 12:30:48,272 INFO [JavaFX Application Thread] WELD-ENV-000020: Using jandex for bean discovery
+2019-06-23 12:30:49,310 INFO [JavaFX Application Thread] WELD-000101: Transactional services not available. Injection of @Inject UserTransaction not available. Transactional observers will be invoked synchronously.
+2019-06-23 12:30:49,737 INFO [JavaFX Application Thread] WELD-ENV-002003: Weld SE container 4072e552-8a46-4d84-bc2c-75ba4b2784f4 initialized
+2019-06-23 12:30:49,757 INFO [JavaFX Application Thread] Starting Migration Application
+2019-06-23 12:30:49,960 INFO [JavaFX Application Thread] INICIADO
+2019-06-23 12:33:55,678 INFO [JavaFX Application Thread] WELD-000900: 3.1.1 (Final)
+2019-06-23 12:33:55,740 INFO [JavaFX Application Thread] WELD-ENV-000020: Using jandex for bean discovery
+2019-06-23 12:33:56,724 INFO [JavaFX Application Thread] WELD-000101: Transactional services not available. Injection of @Inject UserTransaction not available. Transactional observers will be invoked synchronously.
+2019-06-23 12:33:57,185 INFO [JavaFX Application Thread] WELD-ENV-002003: Weld SE container 32a5e57f-0ca7-4594-aa61-cf8639e13a97 initialized
+2019-06-23 12:33:57,216 INFO [JavaFX Application Thread] Starting Migration Application
+2019-06-23 12:33:57,461 INFO [JavaFX Application Thread] INICIADO
+2019-06-23 12:34:19,596 INFO [JavaFX Application Thread] WELD-000900: 3.1.1 (Final)
+2019-06-23 12:34:19,657 INFO [JavaFX Application Thread] WELD-ENV-000020: Using jandex for bean discovery
+2019-06-23 12:34:20,440 INFO [JavaFX Application Thread] WELD-000101: Transactional services not available. Injection of @Inject UserTransaction not available. Transactional observers will be invoked synchronously.
+2019-06-23 12:34:20,997 INFO [JavaFX Application Thread] WELD-ENV-002003: Weld SE container 1e4f4ca2-7258-44f0-9168-126ddc317181 initialized
+2019-06-23 12:34:21,021 INFO [JavaFX Application Thread] Starting Migration Application
+2019-06-23 12:34:21,248 INFO [JavaFX Application Thread] INICIADO
+2019-06-23 12:35:19,675 INFO [JavaFX Application Thread] WELD-000900: 3.1.1 (Final)
+2019-06-23 12:35:19,735 INFO [JavaFX Application Thread] WELD-ENV-000020: Using jandex for bean discovery
+2019-06-23 12:35:20,511 INFO [JavaFX Application Thread] WELD-000101: Transactional services not available. Injection of @Inject UserTransaction not available. Transactional observers will be invoked synchronously.
+2019-06-23 12:35:21,179 INFO [JavaFX Application Thread] WELD-ENV-002003: Weld SE container 6f324932-4cc1-47b4-a921-21990b92c992 initialized
+2019-06-23 12:35:21,206 INFO [JavaFX Application Thread] Starting Migration Application
+2019-06-23 12:35:21,420 INFO [JavaFX Application Thread] INICIADO
+2019-06-23 12:35:31,069 INFO [Thread-5] WELD-ENV-002001: Weld SE container 6f324932-4cc1-47b4-a921-21990b92c992 shut down
+2019-06-23 12:35:57,878 INFO [JavaFX Application Thread] WELD-000900: 3.1.1 (Final)
+2019-06-23 12:35:57,938 INFO [JavaFX Application Thread] WELD-ENV-000020: Using jandex for bean discovery
+2019-06-23 12:35:58,710 INFO [JavaFX Application Thread] WELD-000101: Transactional services not available. Injection of @Inject UserTransaction not available. Transactional observers will be invoked synchronously.
+2019-06-23 12:35:59,160 INFO [JavaFX Application Thread] WELD-ENV-002003: Weld SE container 5af946c4-49a2-4223-899e-e1d1796af3bd initialized
+2019-06-23 12:35:59,194 INFO [JavaFX Application Thread] Starting Migration Application
+2019-06-23 12:35:59,499 INFO [JavaFX Application Thread] INICIADO
+2019-06-23 12:36:28,124 INFO [JavaFX Application Thread] WELD-000900: 3.1.1 (Final)
+2019-06-23 12:36:28,219 INFO [JavaFX Application Thread] WELD-ENV-000020: Using jandex for bean discovery
+2019-06-23 12:36:29,094 INFO [JavaFX Application Thread] WELD-000101: Transactional services not available. Injection of @Inject UserTransaction not available. Transactional observers will be invoked synchronously.
+2019-06-23 12:36:29,535 INFO [JavaFX Application Thread] WELD-ENV-002003: Weld SE container c83ee920-a0be-4e1f-aaa5-febdc800e91f initialized
+2019-06-23 12:36:29,555 INFO [JavaFX Application Thread] Starting Migration Application
+2019-06-23 12:36:29,746 INFO [JavaFX Application Thread] INICIADO
+2019-06-23 12:37:13,509 INFO [JavaFX Application Thread] WELD-000900: 3.1.1 (Final)
+2019-06-23 12:37:13,583 INFO [JavaFX Application Thread] WELD-ENV-000020: Using jandex for bean discovery
+2019-06-23 12:37:14,624 INFO [JavaFX Application Thread] WELD-000101: Transactional services not available. Injection of @Inject UserTransaction not available. Transactional observers will be invoked synchronously.
+2019-06-23 12:37:15,172 INFO [JavaFX Application Thread] WELD-ENV-002003: Weld SE container 688b3851-827a-41d1-87f3-0c52249c9686 initialized
+2019-06-23 12:37:15,202 INFO [JavaFX Application Thread] Starting Migration Application
+2019-06-23 12:37:15,436 INFO [JavaFX Application Thread] INICIADO
+2019-06-23 12:37:35,258 INFO [JavaFX Application Thread] WELD-000900: 3.1.1 (Final)
+2019-06-23 12:37:35,332 INFO [JavaFX Application Thread] WELD-ENV-000020: Using jandex for bean discovery
+2019-06-23 12:37:36,201 INFO [JavaFX Application Thread] WELD-000101: Transactional services not available. Injection of @Inject UserTransaction not available. Transactional observers will be invoked synchronously.
+2019-06-23 12:37:36,658 INFO [JavaFX Application Thread] WELD-ENV-002003: Weld SE container 07db7f1b-ceb2-46da-b709-9b140e2460a7 initialized
+2019-06-23 12:37:36,680 INFO [JavaFX Application Thread] Starting Migration Application
+2019-06-23 12:37:36,869 INFO [JavaFX Application Thread] INICIADO
+2019-06-23 12:47:23,624 INFO [JavaFX Application Thread] WELD-000900: 3.1.1 (Final)
+2019-06-23 12:47:23,766 INFO [JavaFX Application Thread] WELD-ENV-000020: Using jandex for bean discovery
+2019-06-23 12:47:24,659 INFO [JavaFX Application Thread] WELD-000101: Transactional services not available. Injection of @Inject UserTransaction not available. Transactional observers will be invoked synchronously.
+2019-06-23 12:47:25,088 INFO [JavaFX Application Thread] WELD-ENV-002003: Weld SE container 5bb15f8a-7290-41cd-a9eb-7bb48e2304b6 initialized
+2019-06-23 12:47:25,111 INFO [JavaFX Application Thread] Starting Testes Agenda Application
+2019-06-23 12:47:25,302 INFO [JavaFX Application Thread] INICIADO
+2019-06-23 12:47:54,970 INFO [JavaFX Application Thread] WELD-000900: 3.1.1 (Final)
+2019-06-23 12:47:55,029 INFO [JavaFX Application Thread] WELD-ENV-000020: Using jandex for bean discovery
+2019-06-23 12:47:55,800 INFO [JavaFX Application Thread] WELD-000101: Transactional services not available. Injection of @Inject UserTransaction not available. Transactional observers will be invoked synchronously.
+2019-06-23 12:47:56,276 INFO [JavaFX Application Thread] WELD-ENV-002003: Weld SE container 5fbb4198-4170-4d5b-a464-32b983638675 initialized
+2019-06-23 12:47:56,306 INFO [JavaFX Application Thread] Starting Testes Agenda Application
+2019-06-23 12:47:56,697 INFO [JavaFX Application Thread] INICIADO
+2019-06-23 12:48:29,358 INFO [JavaFX Application Thread] WELD-000900: 3.1.1 (Final)
+2019-06-23 12:48:29,538 INFO [JavaFX Application Thread] WELD-ENV-000020: Using jandex for bean discovery
+2019-06-23 12:48:30,617 INFO [JavaFX Application Thread] WELD-000101: Transactional services not available. Injection of @Inject UserTransaction not available. Transactional observers will be invoked synchronously.
+2019-06-23 12:48:31,318 INFO [JavaFX Application Thread] WELD-ENV-002003: Weld SE container 8c4d432c-d7b6-4b50-b3b4-1ac055ce9922 initialized
+2019-06-23 12:48:31,350 INFO [JavaFX Application Thread] Starting Testes Agenda Application
+2019-06-23 12:48:31,696 INFO [JavaFX Application Thread] INICIADO
+2019-06-23 12:50:18,201 INFO [JavaFX Application Thread] WELD-000900: 3.1.1 (Final)
+2019-06-23 12:50:18,380 INFO [JavaFX Application Thread] WELD-ENV-000020: Using jandex for bean discovery
+2019-06-23 12:50:19,470 INFO [JavaFX Application Thread] WELD-000101: Transactional services not available. Injection of @Inject UserTransaction not available. Transactional observers will be invoked synchronously.
+2019-06-23 12:50:20,236 INFO [JavaFX Application Thread] WELD-ENV-002003: Weld SE container d483f89f-449a-4bc3-acaa-c7a83cc9a3fa initialized
+2019-06-23 12:50:20,270 INFO [JavaFX Application Thread] Starting Testes Agenda Application
+2019-06-23 12:50:20,597 INFO [JavaFX Application Thread] INICIADO
+2019-06-23 12:55:39,359 INFO [JavaFX Application Thread] WELD-000900: 3.1.1 (Final)
+2019-06-23 12:55:39,419 INFO [JavaFX Application Thread] WELD-ENV-000020: Using jandex for bean discovery
+2019-06-23 12:55:40,173 INFO [JavaFX Application Thread] WELD-000101: Transactional services not available. Injection of @Inject UserTransaction not available. Transactional observers will be invoked synchronously.
+2019-06-23 12:55:40,599 INFO [JavaFX Application Thread] WELD-ENV-002003: Weld SE container 94670ba8-1a43-4f04-ab74-da8fd93f7829 initialized
+2019-06-23 12:55:40,621 INFO [JavaFX Application Thread] Starting Testes Agenda Application
+2019-06-23 12:55:40,837 INFO [JavaFX Application Thread] INICIADO
+2019-06-23 14:35:22,160 INFO [JavaFX Application Thread] WELD-000900: 3.1.1 (Final)
+2019-06-23 14:35:22,226 INFO [JavaFX Application Thread] WELD-ENV-000020: Using jandex for bean discovery
+2019-06-23 14:35:22,982 INFO [JavaFX Application Thread] WELD-000101: Transactional services not available. Injection of @Inject UserTransaction not available. Transactional observers will be invoked synchronously.
+2019-06-23 14:35:23,485 INFO [JavaFX Application Thread] WELD-ENV-002003: Weld SE container 04282162-a669-4562-bde1-c4155869320d initialized
+2019-06-23 14:35:23,509 INFO [JavaFX Application Thread] Starting Testes Agenda Application
+2019-06-23 14:35:23,714 INFO [JavaFX Application Thread] INICIADO
+2019-06-23 14:36:28,357 INFO [JavaFX Application Thread] WELD-000900: 3.1.1 (Final)
+2019-06-23 14:36:28,431 INFO [JavaFX Application Thread] WELD-ENV-000020: Using jandex for bean discovery
+2019-06-23 14:36:29,264 INFO [JavaFX Application Thread] WELD-000101: Transactional services not available. Injection of @Inject UserTransaction not available. Transactional observers will be invoked synchronously.
+2019-06-23 14:36:29,731 INFO [JavaFX Application Thread] WELD-ENV-002003: Weld SE container 5b9de5bb-4a39-4768-a632-08580168425d initialized
+2019-06-23 14:36:29,751 INFO [JavaFX Application Thread] Starting Testes Agenda Application
+2019-06-23 14:36:29,943 INFO [JavaFX Application Thread] INICIADO
+2019-06-23 14:36:32,688 INFO [JavaFX Application Thread] HHH000204: Processing PersistenceUnitInfo [
+	name: agenda-pu
+	...]
+2019-06-23 14:36:32,762 INFO [JavaFX Application Thread] HHH000412: Hibernate Core {5.3.6.Final}
+2019-06-23 14:36:32,763 INFO [JavaFX Application Thread] HHH000206: hibernate.properties not found
+2019-06-23 14:36:33,239 WARN [JavaFX Application Thread] HHH000059: Defining hibernate.transaction.flush_before_completion=true ignored in HEM
+2019-06-23 14:36:33,288 INFO [JavaFX Application Thread] HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-06-23 14:36:33,523 INFO [JavaFX Application Thread] HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2019-06-23 14:36:33,749 INFO [JavaFX Application Thread] HHH10005002: No explicit CDI BeanManager reference was passed to Hibernate, but CDI is available on the Hibernate ClassLoader.
+2019-06-23 14:37:05,459 INFO [JavaFX Application Thread] WELD-000900: 3.1.1 (Final)
+2019-06-23 14:37:05,521 INFO [JavaFX Application Thread] WELD-ENV-000020: Using jandex for bean discovery
+2019-06-23 14:37:06,314 INFO [JavaFX Application Thread] WELD-000101: Transactional services not available. Injection of @Inject UserTransaction not available. Transactional observers will be invoked synchronously.
+2019-06-23 14:37:06,750 INFO [JavaFX Application Thread] WELD-ENV-002003: Weld SE container c3e13fe1-cf72-4b69-8a1b-7fc611a96774 initialized
+2019-06-23 14:37:06,769 INFO [JavaFX Application Thread] Starting Testes Agenda Application
+2019-06-23 14:37:06,964 INFO [JavaFX Application Thread] INICIADO
+2019-06-23 14:37:14,509 INFO [JavaFX Application Thread] HHH000204: Processing PersistenceUnitInfo [
+	name: agenda-pu
+	...]
+2019-06-23 14:37:14,591 INFO [JavaFX Application Thread] HHH000412: Hibernate Core {5.3.6.Final}
+2019-06-23 14:37:14,593 INFO [JavaFX Application Thread] HHH000206: hibernate.properties not found
+2019-06-23 14:37:15,080 WARN [JavaFX Application Thread] HHH000059: Defining hibernate.transaction.flush_before_completion=true ignored in HEM
+2019-06-23 14:37:15,141 INFO [JavaFX Application Thread] HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-06-23 14:37:15,382 INFO [JavaFX Application Thread] HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2019-06-23 14:37:15,607 INFO [JavaFX Application Thread] HHH10005002: No explicit CDI BeanManager reference was passed to Hibernate, but CDI is available on the Hibernate ClassLoader.
+2019-06-23 14:37:15,786 INFO [JavaFX Application Thread] HHH000397: Using ASTQueryTranslatorFactory
+2019-06-23 14:38:17,522 INFO [JavaFX Application Thread] WELD-000900: 3.1.1 (Final)
+2019-06-23 14:38:17,582 INFO [JavaFX Application Thread] WELD-ENV-000020: Using jandex for bean discovery
+2019-06-23 14:38:18,345 INFO [JavaFX Application Thread] WELD-000101: Transactional services not available. Injection of @Inject UserTransaction not available. Transactional observers will be invoked synchronously.
+2019-06-23 14:38:18,810 INFO [JavaFX Application Thread] WELD-ENV-002003: Weld SE container a68e9999-677b-44c6-b513-5dfa983bdf31 initialized
+2019-06-23 14:38:18,829 INFO [JavaFX Application Thread] Starting Testes Agenda Application
+2019-06-23 14:38:19,031 INFO [JavaFX Application Thread] INICIADO
+2019-06-23 14:38:22,481 INFO [JavaFX Application Thread] HHH000204: Processing PersistenceUnitInfo [
+	name: agenda-pu
+	...]
+2019-06-23 14:38:22,560 INFO [JavaFX Application Thread] HHH000412: Hibernate Core {5.3.6.Final}
+2019-06-23 14:38:22,562 INFO [JavaFX Application Thread] HHH000206: hibernate.properties not found
+2019-06-23 14:38:23,085 WARN [JavaFX Application Thread] HHH000059: Defining hibernate.transaction.flush_before_completion=true ignored in HEM
+2019-06-23 14:38:23,139 INFO [JavaFX Application Thread] HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-06-23 14:38:23,381 INFO [JavaFX Application Thread] HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2019-06-23 14:38:23,654 INFO [JavaFX Application Thread] HHH10005002: No explicit CDI BeanManager reference was passed to Hibernate, but CDI is available on the Hibernate ClassLoader.
+2019-06-23 14:38:24,120 INFO [JavaFX Application Thread] HHH000397: Using ASTQueryTranslatorFactory

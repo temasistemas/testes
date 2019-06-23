@@ -1,0 +1,168 @@
+/* Application wide styles */
+.root {
+	-fx-text-fill: #333333;
+	-fx-background: white;
+	-fx-prompt-text-fill: rgba(0.0, 0.0, 0.0, 0.3);
+	-fx-font-family: "Roboto";
+	-fx-font-size: 10.0pt;
+	-text-disabled-light: #000000b2;
+	-text-disabled-dark: #ffffffbd;
+	-text-dark: white;
+	-text-light: #000000de;		
+	-text-disabled: -text-disabled-light;
+	-background-disabled: rgba(0.0, 0.0, 0.0, 0.12);
+	-background-fill: -text-light;
+	-primary-swatch-500: #2196f3;
+	-primary-swatch-700: #1976d2;
+	-primary-swatch-600: #1e88e5;
+	-elevation-shadow-color: #0000004d;
+	-flat-button-hover-background: #999999;
+	-flat-button-pressed-background: #999999;
+	-flat-button-disabled-fill: #000000;
+	
+	/* 
+	 * -fx-effect: THREE_PASS_BOX, -elevation-shadow-color, 2px, 0px, 0px, 1px;
+	-elevation-z2: THREE_PASS_BOX, -elevation-shadow-color, 16px, 0px, 0px, 7px;
+	*/
+}
+
+.text {
+	-fx-background-color: transparent;
+	-fx-background-insets: 0.0px;
+	-fx-background-radius: 0.0px;
+	-fx-border-color: transparent transparent -fx-prompt-text-fill
+		transparent, transparent;
+	-fx-border-insets: 0.0px 0.0px -1.0px 0.0px, 0.0px 0.0px -1.0px 0.0px;
+	-fx-border-width: 0.0px, 0.0px, 1.0px, 0.0px, 0.0px, 0.0px, 1.0px, 0.0px;
+	-fx-padding: 1.28mm;
+	-fx-bounds-type: logical_vertical_center;
+	-fx-font-smoothing-type: lcd;
+}
+
+.text-field {
+	-fx-control-inner-background: derive(-fx-base, 80.0%);
+	-fx-base: #ececec;
+	-fx-prompt-text-fill: #000000;
+}
+
+.text-input {
+	-fx-prompt-text-fill: derive(-fx-control-inner-background, -30.0%);
+	-fx-cursor: text;
+	-fx-background-color: transparent;
+	-fx-background-insets: 0.0px;
+	-fx-background-radius: 0.0px;
+	-fx-border-style: solid;
+	-fx-border-color: #999999;
+	-fx-border-insets: 0.0px 0.0px -1.0px 0.0px, 0.0px 0.0px -1.0px 0.0px;
+	-fx-border-width: 0.0px 0.0px 1.0px 0.0px;
+	-fx-padding: 1.28mm;
+}
+
+.text-input:focused { 
+	-fx-border-color: #2196f3 #2196f3 #2196f3 #2196f3;
+	-fx-border-insets: 0.0px 0.0px -2.0px 0.0px, 0.0px;
+	-fx-border-width: 0.0px 0.0px 1.0px 0.0px;
+}
+
+.scroll-pane { 
+	-fx-background-insets: 0.0px, -20.0px;
+	-fx-padding: 1.0px;
+}
+.text-area>*.scroll-pane { 
+
+}
+
+.text-input:focused >*.text-area { 
+	-fx-border-color: #2196f3 #2196f3 #2196f3 #2196f3;
+	-fx-border-insets: 0.0px 0.0px -2.0px 0.0px, 0.0px;
+	-fx-border-width: 0.0px 0.0px 0.0px 0.0px;
+}
+
+.text-area:focused >*.scroll-pane { 
+	-fx-border-color: #2196f3 #2196f3 #2196f3 #2196f3;
+	-fx-border-insets: 0.0px 0.0px 0.0px 0.0px;
+	-fx-border-width: 0.0px 0.0px 0.0px 0.0px;
+}
+
+
+.button {
+	-fx-alignment: center;
+	-fx-background-color: -primary-swatch-500;
+	-fx-background-radius: 0.0px;
+	-fx-font-weight: NORMAL;
+	-fx-min-height: 5.76mm;
+	-fx-min-width: 14.08mm;
+	-fx-padding: 1.92mm;
+	-fx-text-fill: white;
+	-fx-background-insets: 0.0px 0.0px -1.0px 0.0px, 0.0px, 1.0px, 2.0px;
+	-fx-content-display: LEFT;
+}
+
+.button:pressed {
+	-fx-background-color: -primary-swatch-700;
+	/*
+	-fx-effect: -elevation-z2;
+	 */
+}
+
+.button:hover {
+	-fx-background-color: -primary-swatch-600;
+}
+
+.button:disabled {
+	-fx-background-color: -background-disabled;
+	-fx-effect: null;
+	-fx-text-fill: ladder(-background-disabled, -text-disabled-light 50.0%, -text-disabled-dark 50.0%);
+}
+
+.table-view {
+	-fx-background-color: white;
+}
+
+.table-view {
+	-fx-background-insets: 0.0px, 1.0px;
+	-fx-padding: 1.0px;
+}
+
+.check-box {
+	-fx-text-fill: inherit;
+}
+
+.table-view *.column-header>*.label {
+	-fx-font-family: "Roboto Medium";
+	-fx-font-size: 12.0px;
+}
+
+.table-view *.column-header { 
+	-fx-font-weight: NORMAL;
+	-fx-background-color: #eaeaea, white;
+	-fx-background-insets: 0.0px, 0.0px 0.0px 1.0px 0.0px;
+	-fx-padding: 0.0px 0.0px 0.0px 0.5em;
+}
+
+.table-view *.filler { 
+-fx-background-color: #eaeaea, white;
+-fx-background-insets: 0.0px, 0.0px 0.0px 1.0px 0.0px;
+-fx-padding: 0.0px 0.0px 0.0px 0.5em;
+}
+
+
+.progress-bar > .bar,
+.progress-bar:indeterminate > .bar{
+    -fx-background-color: #0F9D58;
+    -fx-padding: 1.5;
+    -fx-background-radius: 0.0;
+    -fx-background-insets: 0.0;
+}
+
+.progress-bar > .secondary-bar,
+.progress-bar:indeterminate > .secondary-bar{
+    -fx-background-color: #CDE1B7;
+    -fx-background-radius: 0.0;
+    -fx-background-insets: 0.0;
+}
+
+	
+.check-box {
+	-fx-label-padding: 0.0em, 0.0em, 0.0em, 0.416667em;
+}

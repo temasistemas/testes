@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Accordion?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="238.0" prefWidth="489.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.com.temasistemas.workshop.testes.controller.ContatoController">
+   <children>
+      <VBox prefHeight="344.0" prefWidth="429.0">
+         <children>
+            <Accordion prefHeight="191.0" prefWidth="454.0">
+              <panes>
+                <TitledPane animated="false" prefHeight="204.0" prefWidth="594.0" text="Origem">
+                  <content>
+                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="107.0" prefWidth="592.0">
+                           <children>
+                              <VBox prefHeight="110.0" prefWidth="489.0">
+                                 <children>
+                                    <HBox alignment="CENTER_LEFT" prefHeight="40.0" prefWidth="500.0">
+                                       <children>
+                                          <Label prefHeight="17.0" prefWidth="45.0" text="JDBC" />
+                                          <TextField fx:id="jdbcOrigem" prefHeight="25.0" prefWidth="400.0" />
+                                       </children>
+                                    </HBox>
+                                    <HBox alignment="CENTER_LEFT" prefHeight="40.0" prefWidth="500.0">
+                                       <children>
+                                          <Label prefHeight="17.0" prefWidth="45.0" text="Usuário" />
+                                          <TextField fx:id="usuarioOrigem" prefHeight="25.0" prefWidth="325.0" />
+                                       </children>
+                                    </HBox>
+                                    <HBox alignment="CENTER_LEFT" prefHeight="40.0" prefWidth="500.0">
+                                       <children>
+                                          <Label prefHeight="17.0" prefWidth="45.0" text="Senha" />
+                                          <PasswordField fx:id="senhaOrigem" prefHeight="25.0" prefWidth="325.0" />
+                                       </children>
+                                    </HBox>
+                                 </children>
+                              </VBox>
+                           </children>
+                        </AnchorPane>
+                  </content>
+                </TitledPane>
+                <TitledPane animated="false" prefHeight="167.0" prefWidth="594.0" text="Destino">
+                  <content>
+                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                           <children>
+                              <VBox prefHeight="110.0" prefWidth="489.0">
+                                 <children>
+                                    <HBox alignment="CENTER_LEFT" prefHeight="40.0" prefWidth="600.0">
+                                       <children>
+                                          <Label prefHeight="17.0" prefWidth="45.0" text="JDBC" />
+                                          <TextField fx:id="jdbcDestino" prefHeight="25.0" prefWidth="400.0" />
+                                       </children>
+                                    </HBox>
+                                    <HBox alignment="CENTER_LEFT" prefHeight="40.0" prefWidth="600.0">
+                                       <children>
+                                          <Label prefHeight="17.0" prefWidth="45.0" text="Usuário" />
+                                          <TextField fx:id="usuarioDestino" prefHeight="25.0" prefWidth="325.0" />
+                                       </children>
+                                    </HBox>
+                                    <HBox alignment="CENTER_LEFT" prefHeight="40.0" prefWidth="500.0">
+                                       <children>
+                                          <Label prefHeight="17.0" prefWidth="45.0" text="Senha" />
+                                          <PasswordField fx:id="senhaDestino" prefHeight="25.0" prefWidth="325.0" />
+                                       </children>
+                                    </HBox>
+                                 </children>
+                              </VBox>
+                           </children>
+                        </AnchorPane>
+                  </content>
+                </TitledPane>
+              </panes>
+            </Accordion>
+            <HBox alignment="CENTER_RIGHT" prefHeight="41.0" prefWidth="594.0">
+               <children>
+                  <Button alignment="CENTER" contentDisplay="TOP" mnemonicParsing="false" onAction="#salva" text="Salva">
+                     <HBox.margin>
+                        <Insets right="10.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button mnemonicParsing="false" onAction="#cancela" text="Cancela">
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                  </Button>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</StackPane>
