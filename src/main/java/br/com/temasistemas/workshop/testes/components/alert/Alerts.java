@@ -48,8 +48,8 @@ public final class Alerts {
 		return alert;
 	}
 
-	public static Alert error(final String mensagem) {
-		return error(Optional.empty(), mensagem, Optional.<Throwable>empty());
+	public static void error(final String mensagem) {
+		error(Optional.empty(), mensagem, Optional.<Throwable>empty()).showAndWait();
 	}
 
 	public static void error(final Exception e) {

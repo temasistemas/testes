@@ -7,7 +7,7 @@ import javax.persistence.EntityManager;
 
 import br.com.temasistemas.workshop.testes.model.Contato;
 
-public class ContatoDao {
+public class ContatoDao extends GenericDao {
 
 	@Inject
 	EntityManager em;
@@ -16,12 +16,13 @@ public class ContatoDao {
 		return this.em.createQuery("from Contato", Contato.class).getResultList();
 	}
 
-	public void salvar(final Contato contato) {
-		this.em.persist(contato);
+	@Override
+	protected EntityManager getEm() {
+		return this.em;
 	}
 
-	public void delete(final Contato contato) {
-		this.em.remove(contato);
+	public Contato obterPorId(final int id) {
+		return this.em.find(Contato.class, id);
 	}
 
 }

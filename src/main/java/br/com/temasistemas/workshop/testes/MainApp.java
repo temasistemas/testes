@@ -3,6 +3,7 @@ package br.com.temasistemas.workshop.testes;
 import java.io.IOException;
 import java.io.InputStream;
 import java.net.URL;
+import java.util.Locale;
 import java.util.Optional;
 import java.util.Properties;
 
@@ -30,6 +31,7 @@ public class MainApp extends Application {
 	@SuppressWarnings("serial")
 	@Override
 	public void start(final Stage stage) throws Exception {
+		Locale.setDefault(new Locale("pt", "BR"));
 		final SeContainerInitializer initializer = SeContainerInitializer.newInstance();
 		final SeContainer container = initializer.initialize();
 		container.getBeanManager().fireEvent(stage, new AnnotationLiteral<StartupScene>() {

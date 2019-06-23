@@ -10,8 +10,6 @@ public class ContatoDTO {
 
 	private String telefone;
 
-	private String endereco;
-
 	public int getId() {
 		return this.id;
 	}
@@ -36,20 +34,26 @@ public class ContatoDTO {
 		this.telefone = telefone;
 	}
 
-	public String getEndereco() {
-		return this.endereco;
-	}
-
-	public void setEndereco(final String endereco) {
-		this.endereco = endereco;
-	}
-
 	public String getNome() {
 		return this.nome;
 	}
 
 	public void setNome(final String nome) {
 		this.nome = nome;
+	}
+
+	public static ContatoDTO clone(final int id2, final String nome2, final String email2, final String telefone2) {
+		final ContatoDTO dto = novo(nome2, email2, telefone2);
+		dto.setId(id2);
+		return dto;
+	}
+
+	public static ContatoDTO novo(final String nome2, final String email2, final String telefone2) {
+		final ContatoDTO dto = new ContatoDTO();
+		dto.setEmail(email2);
+		dto.setNome(nome2);
+		dto.setTelefone(telefone2);
+		return dto;
 	}
 
 }

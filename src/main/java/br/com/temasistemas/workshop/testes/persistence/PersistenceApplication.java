@@ -72,7 +72,6 @@ public class PersistenceApplication {
 		propriedades.put("hibernate.show_sql", "false");
 		propriedades.put("hibernate.format_sql", "false");
 		propriedades.put("hibernate.transaction.flush_before_completion", "true");
-		propriedades.put("jboss.as.jpa.providerModule", "application");
 		return propriedades;
 	}
 

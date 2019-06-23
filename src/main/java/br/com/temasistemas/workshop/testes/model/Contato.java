@@ -31,9 +31,6 @@ public class Contato implements Entidade {
 	@Column(name = "telefone")
 	private String telefone;
 
-	@Column(name = "Endereco")
-	private String endereco;
-
 	public static Contato nova(final ContatoDTO dto) {
 		final Contato contato = new Contato();
 		contato.alterar(dto);
@@ -44,7 +41,6 @@ public class Contato implements Entidade {
 		this.setNome(dto.getNome());
 		this.setEmail(dto.getEmail());
 		this.setTelefone(dto.getTelefone());
-		this.setEndereco(dto.getEndereco());
 	}
 
 	public String getNome() {
@@ -57,10 +53,6 @@ public class Contato implements Entidade {
 
 	public String getTelefone() {
 		return this.telefone;
-	}
-
-	public String getEndereco() {
-		return this.endereco;
 	}
 
 	protected void setNome(final String nome) {
@@ -78,8 +70,15 @@ public class Contato implements Entidade {
 		this.telefone = telefone;
 	}
 
-	protected void setEndereco(final String endereco) {
-		this.endereco = endereco;
+	public ContatoDTO dto() {
+		return ContatoDTO.clone(this.getId(), this.getNome(), this.getEmail(), this.getTelefone());
 	}
 
+	public int getId() {
+		return this.id;
+	}
+
+	protected void setId(final int id) {
+		this.id = id;
+	}
 }

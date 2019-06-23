@@ -7,13 +7,8 @@ import java.io.InputStreamReader;
 import java.io.Reader;
 import java.net.URL;
 import java.sql.Connection;
-import java.sql.PreparedStatement;
 import java.sql.SQLException;
-import java.util.ArrayList;
 import java.util.Enumeration;
-import java.util.List;
-import java.util.function.Function;
-import java.util.function.UnaryOperator;
 
 import javax.sql.DataSource;
 
@@ -26,10 +21,6 @@ import com.zaxxer.hikari.HikariDataSource;
 
 import br.com.temasistemas.workshop.testes.components.alert.Alerts;
 import br.com.temasistemas.workshop.testes.utils.BusinessException;
-import br.com.temasistemas.workshop.testes.utils.GenericException;
-import br.com.temasistemas.workshop.testes.utils.ParameterSet;
-import br.com.temasistemas.workshop.testes.utils.Query;
-import br.com.temasistemas.workshop.testes.utils.ResultSetHandler;
 import br.com.temasistemas.workshop.testes.utils.UserPreferences;
 
 public class DataSourceApplication {
@@ -118,34 +109,6 @@ public class DataSourceApplication {
 				// Close silent
 			}
 			defaultDataSource = null;
-		}
-	}
-
-	public static <T> List<T> getList(final Query query, final Function<ResultSetHandler, T> converter,
-			final UnaryOperator<ParameterSet> parametros) {
-		return get(query, rs -> {
-			final List<T> dados = new ArrayList<>();
-			while (rs.next()) {
-				final T retorno = converter.apply(rs);
-				if (retorno != null) {
-					dados.add(retorno);
-				}
-			}
-			return dados;
-		}, parametros);
-	}
-
-	public static <T> T get(final Query query, final Function<ResultSetHandler, T> converter,
-			final UnaryOperator<ParameterSet> parametros) {
-		try (Connection conn = defaultDataSource().getConnection()) {
-			try (PreparedStatement preparedStatement = conn.prepareStatement(query.getSqlParse())) {
-				parametros.apply(new ParameterSet(preparedStatement, query.getIndexParameter()));
-				try (ResultSetHandler resultSet = new ResultSetHandler(preparedStatement.executeQuery())) {
-					return converter.apply(resultSet);
-				}
-			}
-		} catch (final SQLException e) {
-			throw new GenericException("Problemas para executar a consulta", e);
 		}
 	}
 
