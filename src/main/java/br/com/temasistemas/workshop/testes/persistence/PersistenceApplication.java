@@ -72,6 +72,8 @@ public class PersistenceApplication {
 		propriedades.put("hibernate.show_sql", "false");
 		propriedades.put("hibernate.format_sql", "false");
 		propriedades.put("hibernate.transaction.flush_before_completion", "true");
+		propriedades.put("hibernate.transaction.jta.platform_resolver",
+				"br.com.temasistemas.workshop.testes.transaction.CustomJTAPlataformResolver");
 		return propriedades;
 	}
 

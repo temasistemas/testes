@@ -10,8 +10,6 @@ import java.util.function.UnaryOperator;
 
 import javax.persistence.EntityManager;
 
-import org.hibernate.internal.SessionImpl;
-
 import br.com.temasistemas.workshop.testes.service.DataSourceApplication;
 import br.com.temasistemas.workshop.testes.utils.GenericException;
 import br.com.temasistemas.workshop.testes.utils.ParameterSet;
@@ -53,39 +51,23 @@ public abstract class GenericDao {
 		try {
 			this.getEm().persist(entidade);
 			this.getEm().flush();
-			this.voltarTransacao();
+			this.commit();
 		} catch (final Exception e) {
 			this.rollback();
-			this.voltarTransacao();
 			throw new GenericException(e);
 		}
 	}
 
 	private void rollback() {
-		try {
-			((SessionImpl) this.getEm().getDelegate()).getJdbcCoordinator().getLogicalConnection()
-					.getPhysicalConnection().rollback();
-		} catch (final SQLException e) {
-			throw new GenericException(e);
-		}
+		this.getEm().getTransaction().rollback();
 	}
 
-	private void voltarTransacao() {
-		try {
-			((SessionImpl) this.getEm().getDelegate()).getJdbcCoordinator().getLogicalConnection()
-					.getPhysicalConnection().setAutoCommit(true);
-		} catch (final SQLException e) {
-			throw new GenericException(e);
-		}
+	private void commit() {
+		this.getEm().getTransaction().commit();
 	}
 
 	private void iniciarTransacao() {
-		try {
-			((SessionImpl) this.getEm().getDelegate()).getJdbcCoordinator().getLogicalConnection()
-					.getPhysicalConnection().setAutoCommit(false);
-		} catch (final SQLException e) {
-			throw new GenericException(e);
-		}
+		this.getEm().getTransaction().begin();
 	}
 
 	protected abstract EntityManager getEm();
@@ -94,10 +76,10 @@ public abstract class GenericDao {
 		this.iniciarTransacao();
 		try {
 			this.getEm().remove(entidade);
-			this.voltarTransacao();
+			this.getEm().flush();
+			this.commit();
 		} catch (final Exception e) {
 			this.rollback();
-			this.voltarTransacao();
 			throw new GenericException(e);
 		}
 	}

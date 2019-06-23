@@ -21,10 +21,10 @@
                <children>
                   <TableView fx:id="tabela" prefHeight="598.0" prefWidth="516.0">
                     <columns>
-                      <TableColumn maxWidth="100.0" prefWidth="100.0" text="Id" />
-                      <TableColumn maxWidth="150.0" prefWidth="150.0" text="Nome" />
-                        <TableColumn maxWidth="150.0" prefWidth="150.0" text="Email" />
-                        <TableColumn maxWidth="100.0" prefWidth="100.0" text="Telefone" />
+                      <TableColumn fx:id="columnId" maxWidth="100.0" prefWidth="100.0" text="Id" />
+                      <TableColumn fx:id="columnNome" maxWidth="150.0" prefWidth="150.0" text="Nome" />
+                        <TableColumn fx:id="columnEmail" maxWidth="150.0" prefWidth="150.0" text="Email" />
+                        <TableColumn fx:id="columnTelefone" maxWidth="100.0" prefWidth="100.0" text="Telefone" />
                     </columns>
                   </TableView>
                </children>
@@ -53,15 +53,15 @@
                         <TextField fx:id="detalheTelefone" prefHeight="25.0" prefWidth="140.0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
                      </children>
                   </GridPane>
-                  <Button layoutX="193.0" layoutY="166.0" mnemonicParsing="false" onAction="#excluir" text="Excluir" />
-                  <Button layoutX="196.0" layoutY="275.0" mnemonicParsing="false" onAction="#pesquisar" text="Pesquisar" />
-                  <Button layoutX="134.0" layoutY="166.0" mnemonicParsing="false" onAction="#salvar" text="Salvar" />
-                  <Button layoutX="77.0" layoutY="166.0" mnemonicParsing="false" onAction="#novo" text="Novo" />
+                  <Button fx:id="btnExcluir" layoutX="193.0" layoutY="166.0" mnemonicParsing="false" onAction="#excluir" text="Excluir" />
+                  <Button fx:id="btnPesquisar" layoutX="196.0" layoutY="275.0" mnemonicParsing="false" onAction="#pesquisar" text="Pesquisar" />
+                  <Button fx:id="btnSalvar" layoutX="134.0" layoutY="166.0" mnemonicParsing="false" onAction="#salvar" text="Salvar" />
+                  <Button fx:id="btnNovo" layoutX="77.0" layoutY="166.0" mnemonicParsing="false" onAction="#novo" text="Novo" />
                   <TextField layoutX="11.0" layoutY="245.0" prefHeight="25.0" prefWidth="252.0" />
-                  <RadioButton layoutX="11.0" layoutY="223.0" mnemonicParsing="false" text="Id" />
-                  <RadioButton layoutX="61.0" layoutY="223.0" mnemonicParsing="false" text="Nome" />
-                  <RadioButton layoutX="128.0" layoutY="223.0" mnemonicParsing="false" text="Email" />
-                  <RadioButton layoutX="190.0" layoutY="223.0" mnemonicParsing="false" text="Telefone" />
+                  <RadioButton fx:id="rdId" layoutX="11.0" layoutY="223.0" mnemonicParsing="false" onAction="#radioSelecionado" text="Id" />
+                  <RadioButton fx:id="rdNome" layoutX="61.0" layoutY="223.0" mnemonicParsing="false" onAction="#radioSelecionado" text="Nome" />
+                  <RadioButton fx:id="rdEmail" layoutX="128.0" layoutY="223.0" mnemonicParsing="false" onAction="#radioSelecionado" text="Email" />
+                  <RadioButton fx:id="rdTelefone" layoutX="190.0" layoutY="223.0" mnemonicParsing="false" onAction="#radioSelecionado" text="Telefone" />
                   <Separator layoutX="-5.0" layoutY="207.0" prefHeight="3.0" prefWidth="284.0" />
                </children>
             </AnchorPane>
