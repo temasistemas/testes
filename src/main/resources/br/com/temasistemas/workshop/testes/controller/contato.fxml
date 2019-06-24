@@ -57,7 +57,7 @@
                   <Button fx:id="btnPesquisar" layoutX="196.0" layoutY="275.0" mnemonicParsing="false" onAction="#pesquisar" text="Pesquisar" />
                   <Button fx:id="btnSalvar" layoutX="134.0" layoutY="166.0" mnemonicParsing="false" onAction="#salvar" text="Salvar" />
                   <Button fx:id="btnNovo" layoutX="77.0" layoutY="166.0" mnemonicParsing="false" onAction="#novo" text="Novo" />
-                  <TextField layoutX="11.0" layoutY="245.0" prefHeight="25.0" prefWidth="252.0" />
+                  <TextField fx:id="txtPesquisa" layoutX="11.0" layoutY="245.0" prefHeight="25.0" prefWidth="252.0" />
                   <RadioButton fx:id="rdId" layoutX="11.0" layoutY="223.0" mnemonicParsing="false" onAction="#radioSelecionado" text="Id" />
                   <RadioButton fx:id="rdNome" layoutX="61.0" layoutY="223.0" mnemonicParsing="false" onAction="#radioSelecionado" text="Nome" />
                   <RadioButton fx:id="rdEmail" layoutX="128.0" layoutY="223.0" mnemonicParsing="false" onAction="#radioSelecionado" text="Email" />

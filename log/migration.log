@@ -220,3 +220,145 @@
 2019-06-23 20:38:33,584 INFO [JavaFX Application Thread] HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
 2019-06-23 20:38:33,862 INFO [JavaFX Application Thread] HHH10005002: No explicit CDI BeanManager reference was passed to Hibernate, but CDI is available on the Hibernate ClassLoader.
 2019-06-23 20:38:34,457 INFO [JavaFX Application Thread] HHH000397: Using ASTQueryTranslatorFactory
+2019-06-23 21:11:39,685 INFO [JavaFX Application Thread] WELD-000900: 3.1.1 (Final)
+2019-06-23 21:11:39,815 INFO [JavaFX Application Thread] WELD-ENV-000020: Using jandex for bean discovery
+2019-06-23 21:11:40,707 INFO [JavaFX Application Thread] WELD-000101: Transactional services not available. Injection of @Inject UserTransaction not available. Transactional observers will be invoked synchronously.
+2019-06-23 21:11:41,213 INFO [JavaFX Application Thread] WELD-ENV-002003: Weld SE container d87dc045-5644-4941-b398-cac76e92690d initialized
+2019-06-23 21:11:41,236 INFO [JavaFX Application Thread] Starting Testes Agenda Application
+2019-06-23 21:11:41,423 INFO [JavaFX Application Thread] INICIADO
+2019-06-23 21:11:44,339 INFO [JavaFX Application Thread] HHH000204: Processing PersistenceUnitInfo [
+	name: agenda-pu
+	...]
+2019-06-23 21:11:44,404 INFO [JavaFX Application Thread] HHH000412: Hibernate Core {5.3.6.Final}
+2019-06-23 21:11:44,405 INFO [JavaFX Application Thread] HHH000206: hibernate.properties not found
+2019-06-23 21:11:44,879 WARN [JavaFX Application Thread] HHH000059: Defining hibernate.transaction.flush_before_completion=true ignored in HEM
+2019-06-23 21:11:44,933 INFO [JavaFX Application Thread] HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-06-23 21:11:45,204 INFO [JavaFX Application Thread] HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2019-06-23 21:11:45,618 INFO [JavaFX Application Thread] HHH10005002: No explicit CDI BeanManager reference was passed to Hibernate, but CDI is available on the Hibernate ClassLoader.
+2019-06-23 21:12:18,880 INFO [JavaFX Application Thread] WELD-000900: 3.1.1 (Final)
+2019-06-23 21:12:19,011 INFO [JavaFX Application Thread] WELD-ENV-000020: Using jandex for bean discovery
+2019-06-23 21:12:19,899 INFO [JavaFX Application Thread] WELD-000101: Transactional services not available. Injection of @Inject UserTransaction not available. Transactional observers will be invoked synchronously.
+2019-06-23 21:12:20,399 INFO [JavaFX Application Thread] WELD-ENV-002003: Weld SE container ec096f85-1189-4d09-b7f8-aa6c6a08b077 initialized
+2019-06-23 21:12:20,418 INFO [JavaFX Application Thread] Starting Testes Agenda Application
+2019-06-23 21:12:20,605 INFO [JavaFX Application Thread] INICIADO
+2019-06-23 21:12:24,771 INFO [JavaFX Application Thread] HHH000204: Processing PersistenceUnitInfo [
+	name: agenda-pu
+	...]
+2019-06-23 21:12:24,838 INFO [JavaFX Application Thread] HHH000412: Hibernate Core {5.3.6.Final}
+2019-06-23 21:12:24,839 INFO [JavaFX Application Thread] HHH000206: hibernate.properties not found
+2019-06-23 21:12:25,298 WARN [JavaFX Application Thread] HHH000059: Defining hibernate.transaction.flush_before_completion=true ignored in HEM
+2019-06-23 21:12:25,357 INFO [JavaFX Application Thread] HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-06-23 21:12:25,593 INFO [JavaFX Application Thread] HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2019-06-23 21:12:25,835 INFO [JavaFX Application Thread] HHH10005002: No explicit CDI BeanManager reference was passed to Hibernate, but CDI is available on the Hibernate ClassLoader.
+2019-06-23 21:13:14,946 INFO [JavaFX Application Thread] WELD-000900: 3.1.1 (Final)
+2019-06-23 21:13:15,005 INFO [JavaFX Application Thread] WELD-ENV-000020: Using jandex for bean discovery
+2019-06-23 21:13:15,771 INFO [JavaFX Application Thread] WELD-000101: Transactional services not available. Injection of @Inject UserTransaction not available. Transactional observers will be invoked synchronously.
+2019-06-23 21:13:16,244 INFO [JavaFX Application Thread] WELD-ENV-002003: Weld SE container c69d935f-3932-4196-8c46-8b4b22bad382 initialized
+2019-06-23 21:13:16,263 INFO [JavaFX Application Thread] Starting Testes Agenda Application
+2019-06-23 21:13:16,456 INFO [JavaFX Application Thread] INICIADO
+2019-06-23 21:13:19,313 INFO [JavaFX Application Thread] HHH000204: Processing PersistenceUnitInfo [
+	name: agenda-pu
+	...]
+2019-06-23 21:13:19,382 INFO [JavaFX Application Thread] HHH000412: Hibernate Core {5.3.6.Final}
+2019-06-23 21:13:19,383 INFO [JavaFX Application Thread] HHH000206: hibernate.properties not found
+2019-06-23 21:13:19,865 WARN [JavaFX Application Thread] HHH000059: Defining hibernate.transaction.flush_before_completion=true ignored in HEM
+2019-06-23 21:13:19,919 INFO [JavaFX Application Thread] HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-06-23 21:13:20,153 INFO [JavaFX Application Thread] HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2019-06-23 21:13:20,445 INFO [JavaFX Application Thread] HHH10005002: No explicit CDI BeanManager reference was passed to Hibernate, but CDI is available on the Hibernate ClassLoader.
+2019-06-23 21:13:21,008 INFO [JavaFX Application Thread] HHH000397: Using ASTQueryTranslatorFactory
+2019-06-23 21:14:30,151 INFO [JavaFX Application Thread] WELD-000900: 3.1.1 (Final)
+2019-06-23 21:14:30,265 INFO [JavaFX Application Thread] WELD-ENV-000020: Using jandex for bean discovery
+2019-06-23 21:14:31,316 INFO [JavaFX Application Thread] WELD-000101: Transactional services not available. Injection of @Inject UserTransaction not available. Transactional observers will be invoked synchronously.
+2019-06-23 21:14:32,263 INFO [JavaFX Application Thread] WELD-ENV-002003: Weld SE container d9b0169b-4812-4874-bb31-a6cf7310c30c initialized
+2019-06-23 21:14:32,291 INFO [JavaFX Application Thread] Starting Testes Agenda Application
+2019-06-23 21:14:32,646 INFO [JavaFX Application Thread] INICIADO
+2019-06-23 21:14:37,989 INFO [JavaFX Application Thread] HHH000204: Processing PersistenceUnitInfo [
+	name: agenda-pu
+	...]
+2019-06-23 21:14:38,132 INFO [JavaFX Application Thread] HHH000412: Hibernate Core {5.3.6.Final}
+2019-06-23 21:14:38,135 INFO [JavaFX Application Thread] HHH000206: hibernate.properties not found
+2019-06-23 21:14:38,791 WARN [JavaFX Application Thread] HHH000059: Defining hibernate.transaction.flush_before_completion=true ignored in HEM
+2019-06-23 21:14:38,872 INFO [JavaFX Application Thread] HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-06-23 21:14:39,230 INFO [JavaFX Application Thread] HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2019-06-23 21:14:39,851 INFO [JavaFX Application Thread] HHH10005002: No explicit CDI BeanManager reference was passed to Hibernate, but CDI is available on the Hibernate ClassLoader.
+2019-06-23 21:14:40,976 INFO [JavaFX Application Thread] HHH000397: Using ASTQueryTranslatorFactory
+2019-06-23 21:16:03,905 INFO [JavaFX Application Thread] WELD-000900: 3.1.1 (Final)
+2019-06-23 21:16:03,975 INFO [JavaFX Application Thread] WELD-ENV-000020: Using jandex for bean discovery
+2019-06-23 21:16:04,821 INFO [JavaFX Application Thread] WELD-000101: Transactional services not available. Injection of @Inject UserTransaction not available. Transactional observers will be invoked synchronously.
+2019-06-23 21:16:05,405 INFO [JavaFX Application Thread] WELD-ENV-002003: Weld SE container 7c77fd2f-0412-4056-ba6f-0e861a88d96c initialized
+2019-06-23 21:16:05,427 INFO [JavaFX Application Thread] Starting Testes Agenda Application
+2019-06-23 21:16:05,670 INFO [JavaFX Application Thread] INICIADO
+2019-06-23 21:16:08,560 INFO [JavaFX Application Thread] HHH000204: Processing PersistenceUnitInfo [
+	name: agenda-pu
+	...]
+2019-06-23 21:16:08,642 INFO [JavaFX Application Thread] HHH000412: Hibernate Core {5.3.6.Final}
+2019-06-23 21:16:08,644 INFO [JavaFX Application Thread] HHH000206: hibernate.properties not found
+2019-06-23 21:16:09,255 WARN [JavaFX Application Thread] HHH000059: Defining hibernate.transaction.flush_before_completion=true ignored in HEM
+2019-06-23 21:16:09,322 INFO [JavaFX Application Thread] HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-06-23 21:16:09,626 INFO [JavaFX Application Thread] HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2019-06-23 21:16:09,977 INFO [JavaFX Application Thread] HHH10005002: No explicit CDI BeanManager reference was passed to Hibernate, but CDI is available on the Hibernate ClassLoader.
+2019-06-23 21:16:10,564 INFO [JavaFX Application Thread] HHH000397: Using ASTQueryTranslatorFactory
+2019-06-23 21:18:09,054 INFO [JavaFX Application Thread] WELD-000900: 3.1.1 (Final)
+2019-06-23 21:18:09,117 INFO [JavaFX Application Thread] WELD-ENV-000020: Using jandex for bean discovery
+2019-06-23 21:18:09,961 INFO [JavaFX Application Thread] WELD-000101: Transactional services not available. Injection of @Inject UserTransaction not available. Transactional observers will be invoked synchronously.
+2019-06-23 21:18:10,513 INFO [JavaFX Application Thread] WELD-ENV-002003: Weld SE container e2e50ec3-a6d5-4721-859c-cdbc598da3a1 initialized
+2019-06-23 21:18:10,532 INFO [JavaFX Application Thread] Starting Testes Agenda Application
+2019-06-23 21:18:10,722 INFO [JavaFX Application Thread] INICIADO
+2019-06-23 21:18:13,424 INFO [JavaFX Application Thread] HHH000204: Processing PersistenceUnitInfo [
+	name: agenda-pu
+	...]
+2019-06-23 21:18:13,495 INFO [JavaFX Application Thread] HHH000412: Hibernate Core {5.3.6.Final}
+2019-06-23 21:18:13,496 INFO [JavaFX Application Thread] HHH000206: hibernate.properties not found
+2019-06-23 21:18:13,951 WARN [JavaFX Application Thread] HHH000059: Defining hibernate.transaction.flush_before_completion=true ignored in HEM
+2019-06-23 21:18:14,007 INFO [JavaFX Application Thread] HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-06-23 21:18:14,251 INFO [JavaFX Application Thread] HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2019-06-23 21:18:14,550 INFO [JavaFX Application Thread] HHH10005002: No explicit CDI BeanManager reference was passed to Hibernate, but CDI is available on the Hibernate ClassLoader.
+2019-06-23 21:18:15,059 INFO [JavaFX Application Thread] HHH000397: Using ASTQueryTranslatorFactory
+2019-06-23 21:19:25,302 INFO [JavaFX Application Thread] WELD-000900: 3.1.1 (Final)
+2019-06-23 21:19:25,367 INFO [JavaFX Application Thread] WELD-ENV-000020: Using jandex for bean discovery
+2019-06-23 21:19:26,164 INFO [JavaFX Application Thread] WELD-000101: Transactional services not available. Injection of @Inject UserTransaction not available. Transactional observers will be invoked synchronously.
+2019-06-23 21:19:26,676 INFO [JavaFX Application Thread] WELD-ENV-002003: Weld SE container 4b3d5e79-660a-4fad-92ea-2efd0750add8 initialized
+2019-06-23 21:19:26,697 INFO [JavaFX Application Thread] Starting Testes Agenda Application
+2019-06-23 21:19:26,900 INFO [JavaFX Application Thread] INICIADO
+2019-06-23 21:19:29,807 INFO [JavaFX Application Thread] HHH000204: Processing PersistenceUnitInfo [
+	name: agenda-pu
+	...]
+2019-06-23 21:19:29,888 INFO [JavaFX Application Thread] HHH000412: Hibernate Core {5.3.6.Final}
+2019-06-23 21:19:29,891 INFO [JavaFX Application Thread] HHH000206: hibernate.properties not found
+2019-06-23 21:19:30,385 WARN [JavaFX Application Thread] HHH000059: Defining hibernate.transaction.flush_before_completion=true ignored in HEM
+2019-06-23 21:19:30,443 INFO [JavaFX Application Thread] HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-06-23 21:19:30,687 INFO [JavaFX Application Thread] HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2019-06-23 21:19:31,034 INFO [JavaFX Application Thread] HHH10005002: No explicit CDI BeanManager reference was passed to Hibernate, but CDI is available on the Hibernate ClassLoader.
+2019-06-23 21:19:31,539 INFO [JavaFX Application Thread] HHH000397: Using ASTQueryTranslatorFactory
+2019-06-23 21:21:04,917 INFO [JavaFX Application Thread] WELD-000900: 3.1.1 (Final)
+2019-06-23 21:21:04,979 INFO [JavaFX Application Thread] WELD-ENV-000020: Using jandex for bean discovery
+2019-06-23 21:21:05,769 INFO [JavaFX Application Thread] WELD-000101: Transactional services not available. Injection of @Inject UserTransaction not available. Transactional observers will be invoked synchronously.
+2019-06-23 21:21:06,309 INFO [JavaFX Application Thread] WELD-ENV-002003: Weld SE container e785e5b4-d38d-459f-bc1f-42a4b05e75a4 initialized
+2019-06-23 21:21:06,331 INFO [JavaFX Application Thread] Starting Testes Agenda Application
+2019-06-23 21:21:06,543 INFO [JavaFX Application Thread] INICIADO
+2019-06-23 21:21:12,205 INFO [JavaFX Application Thread] HHH000204: Processing PersistenceUnitInfo [
+	name: agenda-pu
+	...]
+2019-06-23 21:21:12,273 INFO [JavaFX Application Thread] HHH000412: Hibernate Core {5.3.6.Final}
+2019-06-23 21:21:12,274 INFO [JavaFX Application Thread] HHH000206: hibernate.properties not found
+2019-06-23 21:21:12,777 WARN [JavaFX Application Thread] HHH000059: Defining hibernate.transaction.flush_before_completion=true ignored in HEM
+2019-06-23 21:21:12,832 INFO [JavaFX Application Thread] HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-06-23 21:21:13,110 INFO [JavaFX Application Thread] HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2019-06-23 21:21:13,504 INFO [JavaFX Application Thread] HHH10005002: No explicit CDI BeanManager reference was passed to Hibernate, but CDI is available on the Hibernate ClassLoader.
+2019-06-23 21:21:14,173 INFO [JavaFX Application Thread] HHH000397: Using ASTQueryTranslatorFactory
+2019-06-23 21:24:45,172 INFO [JavaFX Application Thread] WELD-000900: 3.1.1 (Final)
+2019-06-23 21:24:45,249 INFO [JavaFX Application Thread] WELD-ENV-000020: Using jandex for bean discovery
+2019-06-23 21:24:46,087 INFO [JavaFX Application Thread] WELD-000101: Transactional services not available. Injection of @Inject UserTransaction not available. Transactional observers will be invoked synchronously.
+2019-06-23 21:24:46,565 INFO [JavaFX Application Thread] WELD-ENV-002003: Weld SE container e41d719a-9f44-4d45-8cea-ea5220767cff initialized
+2019-06-23 21:24:46,584 INFO [JavaFX Application Thread] Starting Testes Agenda Application
+2019-06-23 21:24:46,768 INFO [JavaFX Application Thread] INICIADO
+2019-06-23 21:24:51,691 INFO [JavaFX Application Thread] HHH000204: Processing PersistenceUnitInfo [
+	name: agenda-pu
+	...]
+2019-06-23 21:24:51,760 INFO [JavaFX Application Thread] HHH000412: Hibernate Core {5.3.6.Final}
+2019-06-23 21:24:51,761 INFO [JavaFX Application Thread] HHH000206: hibernate.properties not found
+2019-06-23 21:24:52,229 WARN [JavaFX Application Thread] HHH000059: Defining hibernate.transaction.flush_before_completion=true ignored in HEM
+2019-06-23 21:24:52,293 INFO [JavaFX Application Thread] HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-06-23 21:24:52,543 INFO [JavaFX Application Thread] HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2019-06-23 21:24:52,823 INFO [JavaFX Application Thread] HHH10005002: No explicit CDI BeanManager reference was passed to Hibernate, but CDI is available on the Hibernate ClassLoader.
+2019-06-23 21:24:53,356 INFO [JavaFX Application Thread] HHH000397: Using ASTQueryTranslatorFactory

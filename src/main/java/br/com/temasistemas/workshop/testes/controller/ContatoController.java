@@ -84,6 +84,9 @@ public class ContatoController extends AbstractController {
 	private List<RadioButton> radios;
 
 	@FXML
+	TextField txtPesquisa;
+
+	@FXML
 	public void initialize() {
 		this.columnId.setCellValueFactory(new PropertyValueFactory<>("id"));
 		this.columnNome.setCellValueFactory(new PropertyValueFactory<>("nome"));
@@ -107,16 +110,33 @@ public class ContatoController extends AbstractController {
 							this.detalheNome.getText(), this.detalheEmail.getText(), this.detalheTelefone.getText())),
 					Optional.of("Alterado com sucesso"));
 		}
+		this.limparFields();
 		this.carregarLista();
 		event.consume();
 	}
 
 	private void carregarLista() {
-		this.contatos = this.servicoContato.obterContatos();
+		this.contatos = this.carregarComFiltro();
 		this.observableList = FXCollections.observableArrayList(this.contatos);
 		this.tabela.setItems(this.observableList);
 		this.tabela.getSelectionModel().selectedItemProperty()
 				.addListener((observable, oldValue, newValue) -> this.selecionarItem(newValue));
+	}
+
+	private List<ContatoDTO> carregarComFiltro() {
+		if (this.txtPesquisa == null || StringUtils.isBlank(this.txtPesquisa.getText())) {
+			return this.servicoContato.obterContatos();
+		}
+		return this.servicoContato.obterPorFiltro(
+				this.getFieldPesquisa(this.radios.stream().filter(rd -> rd.isSelected()).findFirst().orElse(null)),
+				this.txtPesquisa.getText());
+	}
+
+	private String getFieldPesquisa(final RadioButton radio) {
+		if (radio == null) {
+			return null;
+		}
+		return radio.getId().toLowerCase().replace("rd", "");
 	}
 
 	private void selecionarItem(final ContatoDTO selecionado) {
@@ -147,8 +167,10 @@ public class ContatoController extends AbstractController {
 	}
 
 	public void pesquisar(final ActionEvent event) {
-		event.consume();
-		this.carregarLista();
+		this.executarComTratamento(() -> {
+			event.consume();
+			this.carregarLista();
+		});
 	}
 
 	public void novo(final ActionEvent event) {
