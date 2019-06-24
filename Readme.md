@@ -1,11 +1,11 @@
 
-Compilar projeto
+#Compilar projeto
 
 ```
 mvn clean install
 ```
 
-Compilar com o sonar
+#Compilar com o sonar
 ```
-mvn clean install jacoco:prepare-agent jacoco:report sonar:sonar -Dsonar.host.url=https://sonarcloud.io -Dsonar.login=seutokenaqui
+mvn clean install jacoco:prepare-agent jacoco:report sonar:sonar -Dsonar.projectKey=temasistemas_testes -Dsonar.organization=temasistemas-github -Dsonar.host.url=https://sonarcloud.io -Dsonar.login=tokenaqui
 ```
