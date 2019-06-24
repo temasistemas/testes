@@ -31,7 +31,7 @@ public class Contato implements Entidade {
 	@Column(name = "telefone")
 	private String telefone;
 
-	public static Contato nova(final ContatoDTO dto) {
+	public static Contato novo(final ContatoDTO dto) {
 		final Contato contato = new Contato();
 		contato.alterar(dto);
 		return contato;
@@ -67,7 +67,11 @@ public class Contato implements Entidade {
 	}
 
 	protected void setTelefone(final String telefone) {
-		this.telefone = telefone;
+		if (StringUtils.isBlank(telefone)) {
+			this.telefone = null;
+		} else {
+			this.telefone = telefone;
+		}
 	}
 
 	public ContatoDTO dto() {

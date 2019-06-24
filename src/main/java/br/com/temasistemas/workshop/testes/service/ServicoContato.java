@@ -22,7 +22,7 @@ public class ServicoContato {
 	}
 
 	public void novo(final ContatoDTO dto) {
-		final Contato contato = Contato.nova(dto);
+		final Contato contato = Contato.novo(dto);
 		this.contatoDao.salvar(contato);
 	}
 
