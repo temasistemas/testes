@@ -21,12 +21,12 @@ public class JavaFxJtaPlatform extends AbstractJtaPlatform {
 
 	@Override
 	protected TransactionManager locateTransactionManager() {
-		return TransactionManagerJavaFx.instance();
+		return TransactionManagerJavaFxFactory.instance();
 	}
 
 	@Override
 	protected UserTransaction locateUserTransaction() {
-		return TransactionManagerJavaFx.instance();
+		return TransactionManagerJavaFxFactory.instance();
 	}
 
 }

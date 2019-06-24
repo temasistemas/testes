@@ -19,7 +19,6 @@ import br.com.temasistemas.workshop.testes.utils.GenericException;
 
 public class TransactionManagerJavaFx implements TransactionManager, UserTransaction {
 
-	private static TransactionManagerJavaFx instance;
 	private final ThreadLocal<TransactionJavaFx> transactions = ThreadLocal.withInitial(() -> null);
 
 	public TransactionManagerJavaFx() {
@@ -28,11 +27,15 @@ public class TransactionManagerJavaFx implements TransactionManager, UserTransac
 
 	@Override
 	public void begin() throws NotSupportedException, SystemException {
-		final EntityManager em = ServiceInjectorFactory.getLocator().locate(EntityManager.class);
+		final EntityManager em = this.getEntityManager();
 		final TransactionJavaFx transaction = new TransactionJavaFx(
 				((SessionImpl) em.getDelegate()).getJdbcCoordinator().getLogicalConnection().getPhysicalConnection());
 		transaction.begin();
 		this.transactions.set(transaction);
+	}
+
+	protected EntityManager getEntityManager() {
+		return ServiceInjectorFactory.getLocator().locate(EntityManager.class);
 	}
 
 	@Override
@@ -97,13 +100,6 @@ public class TransactionManagerJavaFx implements TransactionManager, UserTransac
 		} catch (final SystemException e) {
 			return false;
 		}
-	}
-
-	public static TransactionManagerJavaFx instance() {
-		if (instance == null) {
-			instance = new TransactionManagerJavaFx();
-		}
-		return instance;
 	}
 
 }
