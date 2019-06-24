@@ -9,6 +9,7 @@ import org.powermock.core.classloader.annotations.PowerMockIgnore;
 import org.powermock.core.classloader.annotations.PrepareForTest;
 import org.powermock.modules.junit4.PowerMockRunner;
 
+import br.com.temasistemas.workshop.testes.dto.ContatoDTO;
 import br.com.temasistemas.workshop.testes.injector.ServiceInjectorFactory;
 import br.com.temasistemas.workshop.testes.mocks.MocksForGenericDao;
 import br.com.temasistemas.workshop.testes.model.Contato;
@@ -38,6 +39,25 @@ public class ContatoDaoTest {
 		final Contato contato = this.contatoDao.obterPorId(1);
 		Assert.assertNotNull(contato);
 		Assert.assertEquals(1, contato.getId());
+	}
+
+	@Test
+	public void testExcluir() {
+		final Contato contato = this.contatoDao.obterPorEmail("excluir").get(0);
+		this.contatoDao.delete(contato);
+		Assert.assertTrue(this.contatoDao.obterPorNome("excluirteste").isEmpty());
+	}
+
+	@Test
+	public void testSalva() {
+		final Contato contato = this.contatoDao.obterPorNome("testedbunit").get(0);
+		Assert.assertNotNull(contato);
+		contato.alterar(ContatoDTO.clone(1, "contato", "novoemail@teste.com.br", "210000000"));
+		this.contatoDao.salvar(contato);
+		final Contato contatoAlter = this.contatoDao.obterPorId(1);
+		Assert.assertEquals(1, contatoAlter.getId());
+		Assert.assertEquals("novoemail@teste.com.br", contatoAlter.getEmail());
+		Assert.assertEquals("210000000", contatoAlter.getTelefone());
 	}
 
 }

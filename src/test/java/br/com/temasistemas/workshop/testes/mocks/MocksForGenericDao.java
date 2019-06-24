@@ -100,6 +100,7 @@ public class MocksForGenericDao {
 		when(DataSourceApplication.defaultDataSource()).thenReturn(this.dataSource);
 		when(TransactionManagerJavaFxFactory.instance()).thenReturn(new TransactionManagerJavaFxMock());
 		this.persistenceApplication = new PersistenceApplication();
+		this.persistenceApplication.forceShowSQl();
 		this.mocksForServiceInjectorFactory.injectMock(PersistenceApplication.class, this.persistenceApplication);
 	}
 

@@ -398,3 +398,42 @@
 2019-06-23 23:32:35,260 INFO [main] HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
 2019-06-23 23:32:36,520 INFO [main] HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
 2019-06-23 23:32:37,385 INFO [main] HHH10005002: No explicit CDI BeanManager reference was passed to Hibernate, but CDI is available on the Hibernate ClassLoader.
+2019-06-23 23:37:24,674 INFO [main] HHH000204: Processing PersistenceUnitInfo [
+	name: agenda-pu
+	...]
+2019-06-23 23:37:24,867 INFO [main] HHH000412: Hibernate Core {5.3.6.Final}
+2019-06-23 23:37:24,870 INFO [main] HHH000206: hibernate.properties not found
+2019-06-23 23:37:24,898 WARN [main] HHH000059: Defining hibernate.transaction.flush_before_completion=true ignored in HEM
+2019-06-23 23:37:25,028 INFO [main] HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-06-23 23:37:26,257 INFO [main] HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2019-06-23 23:37:26,772 INFO [main] HHH10005002: No explicit CDI BeanManager reference was passed to Hibernate, but CDI is available on the Hibernate ClassLoader.
+2019-06-23 23:39:16,430 INFO [main] HHH000204: Processing PersistenceUnitInfo [
+	name: agenda-pu
+	...]
+2019-06-23 23:39:16,620 INFO [main] HHH000412: Hibernate Core {5.3.6.Final}
+2019-06-23 23:39:16,623 INFO [main] HHH000206: hibernate.properties not found
+2019-06-23 23:39:16,650 WARN [main] HHH000059: Defining hibernate.transaction.flush_before_completion=true ignored in HEM
+2019-06-23 23:39:16,795 INFO [main] HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-06-23 23:39:17,820 INFO [main] HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2019-06-23 23:39:18,347 INFO [main] HHH10005002: No explicit CDI BeanManager reference was passed to Hibernate, but CDI is available on the Hibernate ClassLoader.
+2019-06-23 23:39:19,000 INFO [main] HHH000397: Using ASTQueryTranslatorFactory
+2019-06-23 23:42:11,041 INFO [main] HHH000204: Processing PersistenceUnitInfo [
+	name: agenda-pu
+	...]
+2019-06-23 23:42:11,248 INFO [main] HHH000412: Hibernate Core {5.3.6.Final}
+2019-06-23 23:42:11,250 INFO [main] HHH000206: hibernate.properties not found
+2019-06-23 23:42:11,281 WARN [main] HHH000059: Defining hibernate.transaction.flush_before_completion=true ignored in HEM
+2019-06-23 23:42:11,413 INFO [main] HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-06-23 23:42:12,651 INFO [main] HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2019-06-23 23:42:13,137 INFO [main] HHH10005002: No explicit CDI BeanManager reference was passed to Hibernate, but CDI is available on the Hibernate ClassLoader.
+2019-06-23 23:42:13,731 INFO [main] HHH000397: Using ASTQueryTranslatorFactory
+2019-06-23 23:46:03,094 INFO [main] HHH000204: Processing PersistenceUnitInfo [
+	name: agenda-pu
+	...]
+2019-06-23 23:46:03,323 INFO [main] HHH000412: Hibernate Core {5.3.6.Final}
+2019-06-23 23:46:03,325 INFO [main] HHH000206: hibernate.properties not found
+2019-06-23 23:46:03,352 WARN [main] HHH000059: Defining hibernate.transaction.flush_before_completion=true ignored in HEM
+2019-06-23 23:46:03,471 INFO [main] HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-06-23 23:46:04,808 INFO [main] HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2019-06-23 23:46:05,283 INFO [main] HHH10005002: No explicit CDI BeanManager reference was passed to Hibernate, but CDI is available on the Hibernate ClassLoader.
+2019-06-23 23:46:05,924 INFO [main] HHH000397: Using ASTQueryTranslatorFactory

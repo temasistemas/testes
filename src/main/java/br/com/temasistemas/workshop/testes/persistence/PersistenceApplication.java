@@ -40,6 +40,8 @@ public class PersistenceApplication {
 
 	private EntityManagerFactory entityManagerFactory;
 
+	private boolean showSQL;
+
 	private EntityManagerFactory getEntityManagerFactory() {
 		if (this.entityManagerFactory == null) {
 			synchronized (PersistenceApplication.class) {
@@ -69,12 +71,20 @@ public class PersistenceApplication {
 		propriedades.put("hibernate.jdbc.use_get_generated_keys", "true");
 		propriedades.put("hibernate.jdbc.batch_versioned_data", "true");
 		propriedades.put("hibernate.id.new_generator_mappings", "true");
-		propriedades.put("hibernate.show_sql", "false");
-		propriedades.put("hibernate.format_sql", "false");
+		propriedades.put("hibernate.show_sql", PersistenceApplication.this.showSQL() ? "true" : "false");
+		propriedades.put("hibernate.format_sql", PersistenceApplication.this.showSQL() ? "true" : "false");
 		propriedades.put("hibernate.transaction.flush_before_completion", "true");
 		propriedades.put("hibernate.transaction.jta.platform_resolver",
 				"br.com.temasistemas.workshop.testes.transaction.CustomJTAPlataformResolver");
 		return propriedades;
+	}
+
+	private boolean showSQL() {
+		return this.showSQL;
+	}
+
+	public void forceShowSQl() {
+		this.showSQL = true;
 	}
 
 	private PersistenceUnitInfo createPersistenceUnitInfo() {

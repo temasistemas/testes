@@ -1,3 +1,4 @@
 <dataset>
   <Contato Id="1" Nome="testedbunit" Email="h2database@teste.com.br" telefone="2198989898" />
+  <Contato Id="2" Nome="excluirteste" Email="excluir@teste.com.br" telefone="" />
 </dataset>
