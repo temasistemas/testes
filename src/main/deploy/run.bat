@@ -1,6 +1,6 @@
 @echo off
 setlocal ENABLEDELAYEDEXPANSION
-REM Arquivo para execucao do aplicativo 'migration'
+REM Arquivo para execucao do aplicativo 'testes'
 REM Author: Laerson Vieira
 
 SET STARTCMD=start
@@ -19,10 +19,10 @@ if "%1" == "-debug" (
 )
 
 echo.
-echo Linha de execucao: %STARTCMD% %JAVACMD% %DEBUG_OPCIONAL%-Dlog4j.configurationFile=log4j2.xml -jar migration-jfx.jar  
+echo Linha de execucao: %STARTCMD% %JAVACMD% %DEBUG_OPCIONAL%-Dlog4j.configurationFile=log4j2.xml -jar testes-jfx.jar  
 echo.
 
-%STARTCMD% %JAVACMD% %DEBUG_OPCIONAL%-Dlog4j.configurationFile=log4j2.xml -jar migration-jfx.jar
+%STARTCMD% %JAVACMD% %DEBUG_OPCIONAL%-Dlog4j.configurationFile=log4j2.xml -jar testes-jfx.jar
 
 echo.
 echo Arquivo finalizado

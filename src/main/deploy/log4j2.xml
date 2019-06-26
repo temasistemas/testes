@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="ISO-8859-1" ?>
-<Configuration status="warn" name="migration" packages=""
+<Configuration status="warn" name="testes" packages=""
 	monitorInterval="30" >
 	<Properties>
 		<Property name="logDir">log</Property>
-		<Property name="appName">migration</Property>
+		<Property name="appName">testes</Property>
 	</Properties>
 	<Appenders>
 		<Console name="STDOUT" target="SYSTEM_OUT">
 			<PatternLayout pattern="%d %p [%t] %m%n" />
 		</Console>
-		<RollingFile name="migration-LOGFILE" fileName="${logDir}\${appName}.log"
+		<RollingFile name="testes-LOGFILE" fileName="${logDir}\${appName}.log"
 			filePattern="${logDir}\${appName}-%d{yyyy-MM-dd-HH}-%i.log">
 			<PatternLayout pattern="%d %p [%t] %m%n" />
 			<Policies>
@@ -21,14 +21,14 @@
 	</Appenders>
 	<Loggers>
 		<Logger name="org.apache.log4j.xml" level="debug">
-			<AppenderRef ref="migration-LOGFILE" />
+			<AppenderRef ref="testes-LOGFILE" />
 		</Logger>
 		<Logger name="org.apache.logging" level="debug">
-			<AppenderRef ref="migration-LOGFILE" />
+			<AppenderRef ref="testes-LOGFILE" />
 		</Logger>
 		<Root level="info">
 			<AppenderRef ref="STDOUT" />
-			<AppenderRef ref="migration-LOGFILE" />
+			<AppenderRef ref="testes-LOGFILE" />
 		</Root>
 	</Loggers>
 </Configuration>
