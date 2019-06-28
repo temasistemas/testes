@@ -24,9 +24,9 @@ public class App {
 
 	public void start(@Observes @StartupScene final Stage stage) {
 		try {
-			LOG.info("Starting Testes Agenda Application");
+			LOG.info("Starting Workshop Testes Application");
 			stage.setScene(this.carregarFormularios());
-			stage.setTitle("Testes - Agenda");
+			stage.setTitle("Workshop - Testes");
 			stage.setOnCloseRequest(event -> DataSourceApplication.close());
 			stage.show();
 		} catch (final IOException e) {
