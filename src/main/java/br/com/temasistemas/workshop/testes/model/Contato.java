@@ -59,18 +59,25 @@ public class Contato implements Entidade {
 		if (StringUtils.isBlank(nome)) {
 			throw new BusinessException("Nome é requerido");
 		}
+		if (nome.length() > 100) {
+			throw new BusinessException("Tamanho máximo permitido é 100.");
+		}
 		this.nome = nome;
 	}
 
 	protected void setEmail(final String email) {
-		this.email = email;
+		if (email == null || email.contains("@")) {
+			this.email = email;
+		} else {
+			throw new BusinessException("Email inválido");
+		}
 	}
 
 	protected void setTelefone(final String telefone) {
-		if (StringUtils.isBlank(telefone)) {
-			this.telefone = null;
-		} else {
+		if (telefone == null || telefone.matches("[0-9]{1,20}")) {
 			this.telefone = telefone;
+		} else {
+			throw new BusinessException("Número de telefone inválido digitar apenas números");
 		}
 	}
 
