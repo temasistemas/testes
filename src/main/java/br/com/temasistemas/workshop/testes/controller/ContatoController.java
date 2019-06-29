@@ -128,7 +128,7 @@ public class ContatoController extends AbstractController {
 			return this.servicoContato.obterContatos();
 		}
 		return this.servicoContato.obterPorFiltro(
-				this.getFieldPesquisa(this.radios.stream().filter(rd -> rd.isSelected()).findFirst().orElse(null)),
+				this.getFieldPesquisa(this.radios.stream().filter(RadioButton::isSelected).findFirst().orElse(null)),
 				this.txtPesquisa.getText());
 	}
 

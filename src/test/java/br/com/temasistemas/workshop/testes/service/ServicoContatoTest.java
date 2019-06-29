@@ -112,6 +112,7 @@ public class ServicoContatoTest {
 		final List<ContatoDTO> obtidos = this.servicoContato.obterPorFiltro("id", "2");
 		Assert.assertEquals(1, obtidos.size());
 		Assert.assertEquals(2, obtidos.get(0).getId());
+		Assert.assertEquals(0, this.servicoContato.obterPorFiltro("nome", null).size());
 	}
 
 	@Test
