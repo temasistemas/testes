@@ -15,6 +15,7 @@ import org.mockito.Captor;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.Mockito;
+import org.powermock.api.mockito.PowerMockito;
 import org.powermock.modules.junit4.PowerMockRunner;
 
 import com.google.common.collect.ImmutableList;
@@ -36,6 +37,9 @@ public class ServicoContatoTest {
 
 	@Captor
 	ArgumentCaptor<Contato> captorContatoSalvar;
+
+	@Captor
+	ArgumentCaptor<Contato> captorContatoSalvarNovo;
 
 	@Captor
 	ArgumentCaptor<Contato> captorContatoExcluir;
@@ -82,7 +86,9 @@ public class ServicoContatoTest {
 	@Test
 	public void testAlter() {
 		this.servicoContato.alterar(ContatoDTO.clone(2, "testealter", "testealter@email.com", "21988776"));
-		final Contato contatoAlter = this.captorContatoSalvar.getValue();
+		final List<Contato> lista = this.captorContatoSalvar.getAllValues();
+		Assert.assertEquals(1, lista.size());
+		final Contato contatoAlter = lista.get(0);
 		Assert.assertEquals(2, contatoAlter.getId());
 		Assert.assertEquals("testealter", contatoAlter.getNome());
 		Assert.assertEquals("testealter@email.com", contatoAlter.getEmail());
@@ -114,6 +120,21 @@ public class ServicoContatoTest {
 		Assert.assertEquals(2, obtidos.size());
 		Assert.assertEquals(1, obtidos.get(0).getId());
 		Assert.assertEquals(0, this.servicoContato.obterPorFiltro("nome", "a").size());
+	}
+
+	@Test
+	public void testNovo() {
+		final ContatoDao contatoNovoDao = PowerMockito.mock(ContatoDao.class);
+		final ServicoContato servicoNovo = new ServicoContato();
+		(new Mirror()).on(servicoNovo).set().field("contatoDao").withValue(contatoNovoDao);
+		PowerMockito.doNothing().when(contatoNovoDao).salvar(this.captorContatoSalvarNovo.capture());
+		final ContatoDTO dto = ContatoDTO.novo("tales", "talessemassert@email.com", null);
+		servicoNovo.novo(dto);
+		final Contato novo = this.captorContatoSalvarNovo.getValue();
+		Assert.assertEquals(dto.getEmail(), novo.getEmail());
+		Assert.assertEquals(dto.getNome(), novo.getNome());
+		Assert.assertEquals(dto.getTelefone(), novo.getTelefone());
+		Assert.assertEquals(0, novo.getId());
 	}
 
 }
