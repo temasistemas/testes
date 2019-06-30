@@ -2,9 +2,9 @@
 
 Código de exemplo no repositorios de [testes](https://github.com/temasistemas/testes)
 
-Vídeos do Workshop 29/06/2019
+[Vídeos](https://github.com/temasistemas/testes/tree/master/videos) do Workshop 29/06/2019
 
-https://github.com/temasistemas/testes/videos
+https://github.com/temasistemas/testes/tree/master/videos
 
 # Compilar projeto
 
