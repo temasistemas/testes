@@ -18,7 +18,7 @@ Código de exemplo no repositorios de [testes](https://github.com/temasistemas/t
 
 [Vídeos](https://github.com/temasistemas/testes/tree/master/videos) do Workshop 29/06/2019
 
-https://github.com/temasistemas/testes/tree/master/videos
+[Playlist no youtube](https://www.youtube.com/playlist?list=PLbujWf6bolNapmFeLWZx86BFBGlIO_CGo)
 
 [Apresentação](https://github.com/temasistemas/testes/blob/master/Workshop%20Testes%20Unit%C3%A1rios.pptx)
 
