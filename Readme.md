@@ -20,6 +20,8 @@ Código de exemplo no repositorios de [testes](https://github.com/temasistemas/t
 
 https://github.com/temasistemas/testes/tree/master/videos
 
+[Apresentação](https://github.com/temasistemas/testes/blob/master/Workshop%20Testes%20Unit%C3%A1rios.pptx)
+
 # Compilar projeto
 
 ```
