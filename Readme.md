@@ -16,7 +16,7 @@
 
 Código de exemplo no repositorios de [testes](https://github.com/temasistemas/testes)
 
-[Vídeos](https://github.com/temasistemas/testes/tree/master/videos) do Workshop 29/06/2019
+Vídeos do Workshop 29/06/2019
 
 [Playlist no youtube](https://www.youtube.com/playlist?list=PLbujWf6bolNapmFeLWZx86BFBGlIO_CGo)
 
